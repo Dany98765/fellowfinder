@@ -1,0 +1,124 @@
+.heroSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftSection{
+    margin-left: 70px
+}
+.rightSection{
+    margin-right: 70px
+}
+.catchyHeadline{
+    font-size: 40px;
+    line-height: 1.3;
+    max-width: 250px; /* or any reasonable value */
+}
+.f{
+    color: var(--background-blue)
+}
+.ello{
+    color: var(--light-green)
+}
+.inder{
+    color: var(--dark-green)
+}
+.desc{
+    color: #898989;
+    width: 250px;
+}
+.getInTouchButton{
+    background-color: var(--light-green);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: 400;
+}
+.imgContainer{
+    border-radius: 300px;
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    width: 487.35px;
+    height: 668.14px;
+}
+
+.heroImage{
+    margin-right: 85px;
+    width: 700px;
+    height: 500px;
+}
+.partnerFindFeature{
+    box-shadow: 15px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 970px) {
+    .heroSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .getInTouchButton{
+        margin-left: 45%;
+    }
+    .leftSection, .rightSection {
+        margin: 0;
+    }
+    .catchyHeadline {
+        font-size: 28px;
+        text-align: center;
+        max-width: 100%;
+    }
+    .desc {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .imgContainer {
+        width: 100%;
+        height: auto;
+    }
+    .imgContainer{
+        border-radius: 300px;
+        background-color: var(--light-green);
+        display: flex;
+        justify-content: center; /* centers horizontally */
+        align-items: center;     /* centers vertically */
+        width: 400px;
+        height: 668.14px;
+        margin-top: 40px;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 800px) {
+    .desc {
+        font-size: 12px;
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .catchyHeadline {
+        font-size: 24px;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+    .getInTouchButton{
+        margin-left: 42%;
+    }
+}
+@media (max-width: 530px) {
+    .getInTouchButton{
+        margin-left: 40%;
+    }
+    .imgContainer{
+        border-radius: 250px;
+        width: 380px;
+    }
+    .heroImage{
+        width: 550px;
+        height: 400px;
+    }
+}

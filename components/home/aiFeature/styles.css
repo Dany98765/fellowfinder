@@ -1,0 +1,130 @@
+.aiFeatureTitle{
+    text-align: center;
+}
+
+.aiFeatureContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.aiFeatureOne{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--dark-green);
+    border-radius: 20px;
+    width: 80%;
+    box-shadow: 15px 15px 1px rgba(0, 0, 0, 0.25);
+}
+.aiFeatureIcon{
+    background-color: var(--light-green);
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 30px;
+    width: 50px;
+    height: 50px;
+}
+.alghorithmImg{
+    width: 285px;
+    height: 323px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+.aiFeatureDesc{
+    width: 80%;
+    color: rgb(220, 220, 220);
+    margin-top: 30px;
+}
+.leftContent{
+    margin-left: 40px;
+}
+.catchyTitle{
+    color: white
+}
+.horizontalCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media (max-width: 1000px) {
+    .alghorithmImg{
+        width: 250px;
+        height: 300px;
+    }
+    .aiFeatureDesc{
+        width: 60%;
+    }
+    .aiFeatureTitle{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 850px) {
+    .alghorithmImg{
+        width: 215px;
+        height: 250px;
+    }
+    .aiFeatureTitle{
+        font-size: 22px;
+    }
+}
+@media (max-width: 750px) {
+    .alghorithmImg{
+        width: 190px;
+        height: 230px;
+    }
+    .aiFeatureDesc{
+        font-size: 14px;
+    }
+    .catchyTitle{
+        width: 70%;
+        font-size: 20px;
+    }
+}
+@media (max-width: 650px) {
+    .alghorithmImg{
+        width: 160px;
+        height: 200px;
+    }
+    .aiFeatureDesc{
+        font-size: 12px;
+    }
+    .catchyTitle{
+        font-size: 16px;
+    }
+}
+@media (max-width: 550px) {
+    .alghorithmImg{
+        width: 120px;
+        height: 150px;
+        border-radius: 5px;
+    }
+    .aiFeatureDesc{
+        font-size: 10px;
+    }
+    .catchyTitle{
+        width: 70%;
+        font-size: 14px;
+    }
+    .aiFeatureIcon{
+        padding: 5px;
+        margin-bottom: 15px;
+        width: 25px;
+        height: 25px;
+    }
+    .aiFeatureTitle{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aiFeatureDesc{
+        font-size: 8px;
+        width: 60%;
+    }
+    .aiFeatureTitle{
+        font-size: 15px;
+    }
+}

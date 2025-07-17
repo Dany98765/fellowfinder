@@ -1,0 +1,89 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navLinks{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.partnerFindLink{
+    margin-top: 10px;
+}
+.pricingLink{
+    margin-top: 10px;
+}
+.partnerFindLink:hover, .pricingLink:hover{
+    color: var(--light-green);
+}
+.authButtons{
+    margin-top: 10px;
+    gap: 15px;
+    display: flex;
+    margin-right: 5px;
+}
+.signinLink{
+    color: var(--light-green);
+    margin-top: 6px;
+}
+.signupButton{
+    background-color: var(--light-green);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+@media (max-width: 750px) {
+    .logo{
+        width: 130px;
+        height: 40px;
+    }
+    .pricingLink{
+        font-size: 12px;
+    }
+    .partnerFindLink{
+        font-size: 12px;
+    }
+    .signinLink{
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 550px) {
+    .logo{
+        width: 100px;
+        height: 30px;
+    }
+    .pricingLink{
+        font-size: 10px;
+    }
+    .partnerFindLink{
+        font-size: 10px;
+    }
+    .signinLink{
+        font-size: 10px;
+        margin-top: 8px;
+    }
+    .signupButton{
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 450px) {
+    .pricingLink{
+        font-size: 8px;
+    }
+    .partnerFindLink{
+        font-size: 8px;
+    }
+    .signinLink{
+        font-size: 8px;
+        margin-top: 5px;
+    }
+    .signupButton{
+        padding: 4px 8px;
+        font-size: 8px;
+    }
+}
