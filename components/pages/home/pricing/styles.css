@@ -1,0 +1,12 @@
+.partnerPricingTitle, .sessionsTitle {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.partnerFindPricingPlanContainer, .sessionsPricingPlanContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sessionsPlanContainer, .pricingPlanContainer {
+    margin-top: 100px;
+}

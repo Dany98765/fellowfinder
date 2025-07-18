@@ -1,0 +1,102 @@
+.whyUsSection{
+    background-color: var(--background-blue);
+}
+.container{
+    margin-left: 100px;
+}
+.title{
+    color: var(--light-green);
+    font-size: 30px;
+    padding-top: 60px;
+}
+.whyUsDesc{
+    color: white;
+    font-size: 18px;
+    margin-top: 60px;
+}
+/*  Cards  */
+.featureCards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+.firstCard, .secondCard, .thirdCard{
+    width: 350px;
+    background-color: var(--light-green);
+    box-shadow: 15px 15px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+.firstCard:hover, .secondCard:hover, .thirdCard:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+.freeImg, .ebookImg, .langImg{
+    padding: 8px;
+    background-color: var(--dark-green);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.firstCardTitle, .secondCardTitle, .thirdCardTitle{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    color: white;
+}
+@media (max-width: 1200px) {
+    .firstCard, .secondCard, .thirdCard{
+        width: 300px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .firstCard, .secondCard, .thirdCard{
+        width: 250px;
+    }
+    .whyUsDesc{
+        margin-right: 90px;
+    }
+}
+@media (max-width: 850px) {
+    .firstCard, .secondCard, .thirdCard{
+        width: 200px;
+    }
+    .firstCardTitle, .secondCardTitle, .thirdCardTitle{
+        font-size: 18px;
+    }
+    .whyUsDesc{
+        font-size: 12px;
+        margin-right: 40px;
+    }
+}
+@media (max-width: 670px) {
+    .firstCard, .secondCard, .thirdCard{
+        width: 170px;
+    }
+    .firstCardTitle, .secondCardTitle, .thirdCardTitle{
+        font-size: 14px;
+    }
+    .featureCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstCard, .secondCard, .thirdCard{
+        margin-left: 0;
+        width: 90%;
+    }
+    .freeImg, .ebookImg, .langImg{
+        width: 40px;
+        height: 40px;
+    }
+    .firstCardTitle, .secondCardTitle, .thirdCardTitle{
+        font-size: 20px;
+    }
+
+    .container{
+        margin-left: 80px;
+    }
+}

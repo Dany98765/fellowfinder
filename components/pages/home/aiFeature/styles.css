@@ -16,6 +16,10 @@
     width: 80%;
     box-shadow: 15px 15px 1px rgba(0, 0, 0, 0.25);
 }
+.aiFeatureOne:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
 .aiFeatureIcon{
     background-color: var(--light-green);
     border-radius: 5px;
@@ -46,7 +50,39 @@
 .horizontalCards{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.leftCard:hover, .rightCard:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+.customisationImg, .clockImg{
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    background-color: var(--dark-green);
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.leftCard, .rightCard{
+    background-color: var(--light-green);
+    width: 35%;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 1px rgba(0, 0, 0, 0.25);
+}
+.leftCardTitle, .rightCardTitle{
+    color: white;
+    margin-left: 30px;
+}
+.leftCardDesc{
+    color: rgb(220, 220, 220);
+    font-size: 16px;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 @media (max-width: 1000px) {
     .alghorithmImg{
@@ -69,6 +105,19 @@
     .aiFeatureTitle{
         font-size: 22px;
     }
+    .customisationImg, .clockImg{
+        width: 40px;
+        height: 40px;
+    }
+    .horizontalCards{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .leftCard, .rightCard{
+        width: 80%;
+        height: 250px;
+    }
 }
 @media (max-width: 750px) {
     .alghorithmImg{
@@ -80,6 +129,9 @@
     }
     .catchyTitle{
         width: 70%;
+        font-size: 20px;
+    }
+    .leftCardTitle, .rightCardTitle{
         font-size: 20px;
     }
 }
@@ -117,6 +169,10 @@
     .aiFeatureTitle{
         font-size: 18px;
     }
+    .leftCardDesc{
+        font-size: 10px;
+        width: 80%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -126,5 +182,8 @@
     }
     .aiFeatureTitle{
         font-size: 15px;
+    }
+    .leftCardTitle, .rightCardTitle{
+        font-size: 16px;
     }
 }

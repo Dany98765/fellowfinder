@@ -6,7 +6,7 @@ export default function Navbar() {
     return(
         <div className="navbar">
             <img
-                src="/logo.png"
+                src="/icons/logo.png"
                 alt="Logo"
                 width={200}
                 height={60}

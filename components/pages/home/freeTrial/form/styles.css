@@ -1,0 +1,61 @@
+.bookingForm{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.formHeader{
+    display: flex;
+    gap: 15px;
+}
+.nameField{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--light-gray);
+    padding: 0 10px;
+}
+.dateField{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--light-gray);
+    padding: 0 10px;
+    color: var(--light-green);
+    accent-color: var(--light-green);
+}
+.bookButton{
+    background-color: var(--light-green);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+}
+@media (max-width: 820px) {
+    .bookButton{
+        width: 160px;
+        height: 40px;
+    }
+    .nameField, .dateField{
+        width: 160px;
+        height: 40px;
+    }
+}
+@media (max-width: 620px) {
+    .bookButton{
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .nameField, .dateField{
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 500px) {
+   .bookingForm{
+        flex-direction: column;
+    }
+}

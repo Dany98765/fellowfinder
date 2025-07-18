@@ -1,24 +1,26 @@
+"use client"
+
 import './styles.css';
+import { useTranslation } from 'next-i18next';
 
 export default function HeroSection() {
+    const { t } = useTranslation('landing/hero');
     return (
         <div className="heroSection">
             <div className="leftSection">
                 <h1 className="catchyHeadline">
-                    Hop Onboard the Business Market with 
+                    {t('welcome')}
                     <span className="f"> F</span><span className="ello">ello</span><span className="f">F</span><span className="inder">inder</span>
                 </h1>
                 <br /><br />
-                <p className="desc">
-                    A fully-fledged service empowering young entrepreneurs to boost off to the business market with a lucrative startup
-                </p>
+                <p className="description">{t('desc')}</p>
                 <br /><br />
-                <button className="getInTouchButton">Get in Touch</button>
+                <button className="getInTouchButton">{t('getInTouch')}</button>
             </div>
             <div className="rightSection">
                 <div className="imgContainer">
                     <img
-                        src="/person.png"
+                        src="/icons/person.png"
                         alt="Person with laptop"
                         className="heroImage"
                     />
