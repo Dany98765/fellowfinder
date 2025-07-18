@@ -1,0 +1,8 @@
+.sidebarContainer{
+    background-color: var(--light-blue);
+    margin-top: 60px;
+    width: 47%;
+}
+.title{
+    color: white
+}

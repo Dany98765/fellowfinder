@@ -1,14 +1,15 @@
 import FreeTrialBooking from "./form/page"
 import "./styles.css"
 
-export default function FreeTrial() {
+export default async function FreeTrial({ lang = "en" }) {
+    const messages = (await import(`@/public/locales/${lang}/landing/riskFree.json`)).default;
+    let marginDirection = lang == 'en' ? 'marginLeft' : 'marginRight'
     return(
-        <div className="freeTrialSection">
-            <div className="contentContainer">
-                <h3 className="riskFreeTitle">Risk-Free Now!</h3>
-                <p className="desc">If you are willing to explore more details or have a deeper explanation of our services, don’t hesitate! You can schedule a free-trial session to gain a deeper insight of who we are, what we do, help you choose the most suitable plan for your needs and gain pro tips.
-                </p>
-                <FreeTrialBooking />
+        <div className="freeTrialSection" style={{ [marginDirection]: "15px"}}>
+            <div className="contentContainer" style={{ [marginDirection]: "15px"}}>
+                <h3 className="riskFreeTitle" style={{ [marginDirection]: "15px"}}>{messages.title}!</h3>
+                <p className="desc" style={{ [marginDirection]: "15px"}}>{messages.desc}</p>
+                <FreeTrialBooking lang={lang}/>
                 <br />
                 <br />
                 <br />

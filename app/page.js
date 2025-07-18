@@ -1,5 +1,11 @@
 import HomePage from "@/components/pages/home/page"
 
-export default function Home() {
-  <HomePage />
+export default async function Home({ searchParams }) {
+  const lang = await searchParams.lang; // replace with actual dynamic logic
+  const direction = lang === 'ar' ? 'rtl' : 'ltr';
+  return(
+    <div lang={lang} dir={direction}>
+      <HomePage lang={lang}/>
+    </div>
+  )
 }

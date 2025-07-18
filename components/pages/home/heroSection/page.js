@@ -1,19 +1,22 @@
 import './styles.css';
 
-export default function HeroSection() {
+export default async function HeroSection({ lang = "en" }) {
+    const messages = (await import(`@/public/locales/${lang}/landing/hero.json`)).default;
+    let marginDirection = lang == 'en' ? 'marginLeft' : 'marginRight'
+    let imgMarginDirection = lang == 'en' ? 'marginRight' : 'marginLeft'
     return (
         <div className="heroSection">
-            <div className="leftSection">
+            <div className="leftSection" style={{ [marginDirection]: "30px" }}>
                 <h1 className="catchyHeadline">
-                    Hop Onboard the Business Market with
+                    {messages.title}
                     <span className="f"> F</span><span className="ello">ello</span><span className="f">F</span><span className="inder">inder</span>
                 </h1>
                 <br /><br />
-                <p className="description">A fully-fledged service empowering young entrepreneurs to boost off to the business market with a lucrative startup"</p>
+                <p className="description">{messages.desc}</p>
                 <br /><br />
-                <button className="getInTouchButton">Get in Touch</button>
+                <button className="getInTouchButton">{messages.getInTouch}</button>
             </div>
-            <div className="rightSection">
+            <div className="rightSection" style={{ [imgMarginDirection]: "30px" }}>
                 <div className="imgContainer">
                     <img
                         src="/icons/person.png"
@@ -21,7 +24,6 @@ export default function HeroSection() {
                         className="heroImage"
                     />
                 </div>
-                
             </div>
         </div>
     );

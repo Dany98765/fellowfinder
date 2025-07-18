@@ -1,7 +1,11 @@
 import FeatureCard from "../featureCard/page"
 import "./styles.css"
 
-export default function PricingCard({ price, type, desc, features, isRecommended }) {
+// style={{ [marginDirection]: "15px"}}
+// const messages = (await import(`@/public/locales/${lang}/landing/ai.json`)).default;
+// let marginDirection = lang == 'en' ? 'marginLeft' : 'marginRight'
+
+export default async function PricingCard({ price, type, desc, features, isRecommended }) {
     let textColor = isRecommended ? "white" : "black";
     return(
         <div className="pricingCard" style={{ backgroundColor: isRecommended ? "#1CA6A6" : "#FFFFFF" }}>
@@ -11,7 +15,6 @@ export default function PricingCard({ price, type, desc, features, isRecommended
                         <p>Most Recommended</p>
                     </div>
                 }
-               
                 <h1 className="price" style={{ color: textColor }}>${price}/<span><h6 style={{ marginTop: "8px", color: textColor }}>one time payement</h6></span></h1>
                 <p className="type" style={{ color: textColor }}>{type}</p>
                 <p className="desc" style={{ color: textColor }}>{desc}</p>

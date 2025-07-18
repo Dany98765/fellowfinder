@@ -1,9 +1,12 @@
 import "./styles.css"
 
-export default function AIFeature() {
+export default async function AIFeature({ lang = "en" }) {
+    const messages = (await import(`@/public/locales/${lang}/landing/ai.json`)).default;
+    let marginDirection = lang == 'en' ? 'marginLeft' : 'marginRight'
+    let imgMarginDirection = lang == 'en' ? 'marginRight' : 'marginLeft'
     return(
         <div className="aiFeature">
-            <h1 className="aiFeatureTitle">AI-Powered Partner <span style={{ color: "#1CA6A6" }}>Finder</span></h1>
+            <h1 className="aiFeatureTitle"> {messages.introTitle} <span style={{ color: "#1CA6A6" }}> {messages.introTitleImp} </span></h1>
             <br />
             <br />
             <br />
@@ -17,19 +20,29 @@ export default function AIFeature() {
                 <div className="aiFeatureOne">
                     <div className="leftContent">
                         <img 
-                        src="/icons/reporting.png"
-                        alt="Reporting Icon"
-                        className="aiFeatureIcon"
+                            src="/icons/reporting.png"
+                            alt="Reporting Icon"
+                            className="aiFeatureIcon"
+                            style={{ [marginDirection]: "15px"}}
                         />
-                        <h2 className="catchyTitle">AI Text-Based <span style={{ color: "#1CA6A6" }}>Analysis</span></h2>
-                        <p className="aiFeatureDesc">The algorithm analysis your description to find the most suitable people possible </p>
+                        <h2 style={{ [marginDirection]: "15px"}} className="catchyTitle"><span style={{ color: "#1CA6A6" }}> {messages.featureOneWord} </span> {messages.featureOneTitle} </h2>
+                        <p style={{ [marginDirection]: "15px"}} className="aiFeatureDesc">{messages.featureOneDescription}</p>
                     </div>
                     <div>
-                        <img 
-                        src="/icons/alghorithm.png"
-                        className="alghorithmImg"
-                        alt="Algorithm Icon"
-                        />
+                        {lang == 'en' ?
+                            <img 
+                                src="/icons/alghorithm.png"
+                                className="alghorithmImg"
+                                alt="Algorithm Icon"
+                                style={{ [imgMarginDirection]: "30px"}}
+                            /> : 
+                            <img 
+                                src="/icons/alghorithm-ar.png"
+                                className="alghorithmImg"
+                                alt="Algorithm Icon"
+                                style={{ [imgMarginDirection]: "30px"}}
+                            />
+                        }
                     </div>
                 </div>
                 <input type="hidden" />
@@ -41,17 +54,19 @@ export default function AIFeature() {
                         src="/icons/customisation.png"
                         alt="Customisation Icon"
                         className="customisationImg"
+                        style={{ [marginDirection]: "30px"}}
                     />
-                    <h2 className="leftCardTitle">A Tailored Partner Finder System</h2>
-                    <p className="leftCardDesc">You have the potential to specify the number of partners, background knowledge, age and more...</p>
+                    <h2 style={{ [marginDirection]: "30px"}} className="leftCardTitle">{messages.featureTwoTitle}</h2>
+                    <p style={{ [marginDirection]: "30px"}} className="leftCardDesc">{messages.featureTwoDescription}</p>
                 </div>
                 <div className="rightCard">
                     <img 
                         src="/icons/clock.png"
                         alt="Time Effective Icon"
                         className="clockImg"
+                        style={{ [marginDirection]: "30px"}}
                     />
-                    <h2 className="rightCardTitle">A Seamless, Time-Efficient Solution</h2>                
+                    <h2 style={{ [marginDirection]: "30px"}} className="rightCardTitle">{messages.featureThreeTitle}</h2>                
                 </div>
                 <input type="hidden" />
             </div>

@@ -6,7 +6,8 @@ import WhyUs from "./whyUs/page";
 import Pricing from "./pricing/page";
 import FreeTrial from "./freeTrial/page";
 
-export default function HomePage() {
+export default function HomePage({ lang }) {
+    console.log("Language:", lang);
     return(
         <div>
             <Navbar />
@@ -15,7 +16,7 @@ export default function HomePage() {
             <br />
             <br />
             <br />
-            <HeroSection />
+            <HeroSection lang={lang}/>
             <br />
             <br />
             <br />
@@ -30,7 +31,7 @@ export default function HomePage() {
             <br />
             <br />
             <br />
-            <AIFeature />
+            <AIFeature lang={lang} />
             <br />
             <br />
             <br />
@@ -45,7 +46,7 @@ export default function HomePage() {
             <br />
             <br />
             <br />
-            <WhyUs/>
+            <WhyUs lang={lang}/>
             <br />
             <br />
             <br />
@@ -60,7 +61,7 @@ export default function HomePage() {
             <br />
             <br />
             <br />
-            <Pricing />
+            <Pricing lang={lang} />
             <br />
             <br />
             <br />
@@ -75,7 +76,7 @@ export default function HomePage() {
             <br />
             <br />
             <br />
-            <FreeTrial />
+            <FreeTrial lang={lang}/>
         </div>
     )
 }

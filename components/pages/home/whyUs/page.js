@@ -1,11 +1,13 @@
 import "./styles.css"
 
-export default function WhyUs() {
+export default async function WhyUs({ lang = "en" }) {
+    const messages = (await import(`@/public/locales/${lang}/landing/whyUs.json`)).default;
+    let marginDirection = lang == 'en' ? 'marginLeft' : 'marginRight'
     return(
         <div className="whyUsSection">
             <div className="container">
-                <h3 className="title">Why Us?</h3>
-                <p className="whyUsDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <h3 style={{ [marginDirection]: "15px"}} className="title">{messages.title}</h3>
+                <p style={{ [marginDirection]: "15px"}} className="whyUsDesc">{messages.desc}
                 </p>
             </div>
             <div className="featureCards">
@@ -14,24 +16,27 @@ export default function WhyUs() {
                         src="/icons/free.png"
                         alt="Free Img"
                         className="freeImg"
+                        style={{ [marginDirection]: "15px"}}
                     />
-                    <h3 className="firstCardTitle">A <span style={{ color: "#10374A" }}>Free</span> Welcome Session with your Partners</h3>
+                    {lang == 'ar' ? <h3 style={{ [marginDirection]: "15px"}} className="firstCardTitle">{messages.titleOne} <span style={{ color: "#10374A" }}>{messages.titleOneImp}</span></h3> : <h3 style={{ [marginDirection]: "15px"}} className="firstCardTitle"><span style={{ color: "#10374A" }}>{messages.titleOneImp} </span>{messages.titleOne}</h3> }
                 </div>
                 <div className="secondCard">
                     <img 
                         src="/icons/ebook.png"
                         alt="E-book Img"
                         className="ebookImg"
+                        style={{ [marginDirection]: "15px"}}
                     />
-                    <h3 className="secondCardTitle"><span style={{ color: "#10374A" }}>Summarized E-book</span> as a Point of Reference</h3>
+                   {lang == 'ar' ? <h3 style={{ [marginDirection]: "15px"}} className="secondCardTitle">{messages.titleTwo} <span style={{ color: "#10374A" }}>{messages.titleTwoImp}</span></h3> : <h3 style={{ [marginDirection]: "15px"}} className="secondCardTitle"><span style={{ color: "#10374A" }}>{messages.titleTwoImp} </span>{messages.titleTwo}</h3> }
                 </div>
                 <div className="thirdCard">
                     <img 
                         src="/icons/language.png"
                         alt="Free Img"
                         className="langImg"
+                        style={{ [marginDirection]: "15px"}}
                     />
-                    <h3 className="thirdCardTitle">Supporting<span style={{ color: "#10374A" }}> Multiple</span> Geographical Locations</h3>
+                   {lang == 'ar' ? <h3 style={{ [marginDirection]: "15px"}} className="secondCardTitle">{messages.titleThree} <span style={{ color: "#10374A" }}>{messages.titleThreeImp}</span></h3> : <h3 style={{ [marginDirection]: "15px"}} className="secondCardTitle"><span style={{ color: "#10374A" }}>{messages.titleThreeImp} </span>{messages.titleThree}</h3> }
                 </div>
             </div>
         </div>
