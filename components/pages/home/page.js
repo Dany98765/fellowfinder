@@ -10,12 +10,6 @@ export default function HomePage({ lang }) {
     console.log("Language:", lang);
     return(
         <div>
-            <Navbar />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <HeroSection lang={lang}/>
             <br />
             <br />
