@@ -1,6 +1,5 @@
-// /app/page.js
-import { redirect } from 'next/navigation';
+import HomePage from "@/components/pages/home/page"
 
-export default function RootPage() {
-  redirect('/en'); // or whatever your default locale is
+export default function Home() {
+  <HomePage />
 }
