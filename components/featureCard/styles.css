@@ -1,0 +1,10 @@
+.featureCard{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px
+}
+.tickIcon{
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,123 @@
+.signupFormContainer{
+    margin-top: 100px;
+}
+.titleContainer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.italicWord{
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.signupOptionsContainer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.signupOption{
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+}
+.signupOption:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 1px rgb(121, 121, 121);
+}
+.separationLine{
+    width: 120%;
+}
+.formContainer{
+    padding-top: 20px;
+}
+.fieldContainer{
+    padding-bottom: 30px;
+}
+.fieldText{
+    padding-bottom: 10px;
+}
+.formInput{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 600px;
+    height: 30px;
+    padding: 8px;
+}
+.p {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between flag and input */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+    max-width: 600px;
+    background-color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Focus style */
+  .p:focus-within {
+    border-color: #1CA6A6;
+    box-shadow: 0 0 0 2px var(--dark-green);
+  }
+  
+  /* Country selector (flag + dropdown) */
+  .p .PhoneInputCountry {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Flag icon */
+  .p .PhoneInputCountryIcon {
+    width: 24px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  
+  /* Country dropdown arrow */
+  .p .PhoneInputCountrySelectArrow {
+    margin-left: 4px;
+  }
+  
+  /* The actual input field */
+  .p input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 0;
+    background-color: transparent;
+  }
+/* Force flag and dropdown order */
+.p .PhoneInputCountry {
+    display: flex;
+    flex-direction: row; /* Ensure horizontal */
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+  
+  .p .PhoneInputCountryIcon {
+    order: 0; /* Ensure flag comes first */
+  }
+  
+  .p .PhoneInputCountrySelect {
+    order: 1;
+  }
+.proceedButton{
+    width: 100%;
+    padding: 10px 16px;
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.proceedButton:hover{
+    background-color: rgba(18, 115, 115, 0.8);
+    cursor: pointer;
+}

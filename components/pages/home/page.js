@@ -1,5 +1,5 @@
 import "./styles.css";
-import Navbar from "../navbar/page";
+import Navbar from "../../navbar/page";
 import HeroSection from "./heroSection/page";
 import AIFeature from "./aiFeature/page";
 import WhyUs from "./whyUs/page";

@@ -1,8 +1,23 @@
 .sidebarContainer{
-    background-color: var(--light-blue);
-    margin-top: 60px;
-    width: 47%;
+    background-color: var(--dark-green);
+    width: 40%;
+    height: 800px;
+    border-radius: 20px;
+    margin-top: 30px;
 }
-.title{
-    color: white
+.heading{
+    color: white;
+    padding-top: 60px;
+    font-size: 28px;
+    line-height: 1.5;
+}
+.desc{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.dashboardImg{
+    width: 80%;
+    height: 40%;
+    padding-top: 30px;
 }

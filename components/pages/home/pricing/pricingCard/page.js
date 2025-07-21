@@ -1,4 +1,4 @@
-import FeatureCard from "../featureCard/page"
+import FeatureCard from "@/components/featureCard/page";
 import "./styles.css"
 
 // style={{ [marginDirection]: "15px"}}
@@ -20,7 +20,7 @@ export default async function PricingCard({ price, type, desc, features, isRecom
                 <p className="desc" style={{ color: textColor }}>{desc}</p>
                 <div className="features">
                     {features.map((feature, index) => (
-                        <FeatureCard key={index} feature={{ title: feature }} isRecommended={isRecommended}/>
+                        <FeatureCard key={index} feature={{ title: feature }} isRecommended={isRecommended} isAuth={false}/>
                     ))}
                 </div>
                 <br />

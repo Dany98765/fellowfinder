@@ -22,13 +22,16 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <img
-        src="/icons/logo.png"
-        alt="Logo"
-        width={200}
-        height={60}
-        className="logo"
-      />
+      <Link href="/">
+        <img
+            src="/icons/logo.png"
+            alt="Logo"
+            width={200}
+            height={60}
+            className="logo"
+        />
+      </Link>
+      
       <div className="navLinks">
         <Link className="pricingLink" href="#">Pricing</Link>
         <Link className="partnerFindLink" href="#">Find Partner</Link>
