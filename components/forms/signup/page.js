@@ -104,9 +104,8 @@ export default function SignupForm({ lang }){
             let result = await createUser(allFormData)
             if (result.success){
                 await signIn("credentials", {
-                    email,
-                    password,
-                    callbackUrl: "/",
+                    email: allFormData.email,
+                    password: allFormData.password
                   });
             }
         }

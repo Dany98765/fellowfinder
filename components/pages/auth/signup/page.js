@@ -6,12 +6,12 @@ import "./styles.css";
 import SignupForm from "@/components/forms/signup/page";
 
 export default function Signup({ lang }) {
+    let windowHi = 9999
     const [showSidebar, setShowSidebar] = useState(false);
     useEffect(() => {
-        if (window.innerWidth >= 520) {
+        if (windowHi >= 520) {
             setShowSidebar(true);
         }
-        console.log(window.innerWidth)
     }, [
         
     ]);

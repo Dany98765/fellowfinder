@@ -3,7 +3,6 @@
 import bcrypt from "bcrypt";
 import dbConnect from "../mongoose";
 import User from "@/database/user.model";
-import { signIn } from "next-auth/react";
 
 export async function createUser(allFormData) {
   const {
@@ -52,11 +51,5 @@ export async function createUser(allFormData) {
     };
   } catch (error) {
     return { success: false, message: error.message };
-  } finally{
-    await signIn("credentials", {
-      email,
-      password,
-      callbackUrl: "/",
-    });
-  }
+  } 
 }
