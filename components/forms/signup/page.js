@@ -11,8 +11,12 @@ import { proceedValidation } from "@/utils/validation/proceed";
 import AlertMessage from "@/components/alert/page";
 import { signupValidation } from "@/utils/validation/signup";
 import { createUser } from "@/utils/actions/user.action";
+import { useSession } from "next-auth/react";
+
 
 export default function SignupForm({ lang }){
+    const userFind = useSession()
+    console.log(JSON.stringify(userFind) + "??????????>>>>>>>>>>>>><<<<<<<<<<<<<<<<........")
     const router = useRouter()
     let locale = lang || 'en'
     let paddingDirection = locale == 'en' ? 'paddingLeft' : 'paddingRight'
@@ -97,10 +101,15 @@ export default function SignupForm({ lang }){
         setOnBoard(true)
         if (result.success) {
             console.log("SUCCESS!!!")
-            // Maybe redirect or show success message
+            let result = await createUser(allFormData)
+            if (result.success){
+                await signIn("credentials", {
+                    email,
+                    password,
+                    callbackUrl: "/",
+                  });
+            }
         }
-
-        await createUser(allFormData)
     }
     
     let lawyerBgColor = selectedButton == 'lawyer' ? "#1CA6A6" : "#FFFFFF"
@@ -212,8 +221,7 @@ export default function SignupForm({ lang }){
                         <h2>{onBoardMessages.title}</h2>
                         <i className="italicWord">{selectedButton == 'funder' ? onBoardMessages.italicPhraseFunder : selectedButton == 'kickStarter' ? onBoardMessages.italicPhraseKickStarter : onBoardMessages.italicPhraseLawyer}</i>
                     </div>
-                    <form className="onBoardForm" action={(e) => {
-                            e.preventDefault()
+                    <form className="onBoardForm" action={() => {
                             signup()
                         }}>
                         <p className="fieldText">{onBoardMessages.investementFields}</p>
@@ -263,6 +271,7 @@ export default function SignupForm({ lang }){
                                 className="descInput"
                             />
                         </div>
+                        <p>{desc.length}</p>
                         <input type="hidden" name="desc" />
                         <div className="termsAndPrivacyContainer">
                             <input type="checkbox" className="checkbox"/>

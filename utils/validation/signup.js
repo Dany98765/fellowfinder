@@ -13,7 +13,7 @@ export async function signupValidation({ expertiseFields, otherField, money, sel
             success
         }
     }
-    if (selectedButton == 'funder' && money.length < 500){
+    if (selectedButton == 'funder' && money < 500){
         return {
             message: msgs.money,
             success

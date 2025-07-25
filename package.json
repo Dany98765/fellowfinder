@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.2.0",
     "@mui/material": "^7.2.0",
+    "bcrypt": "^6.0.0",
     "isemail": "^3.2.0",
     "mongodb": "^6.18.0",
     "mongoose": "^8.16.4",
