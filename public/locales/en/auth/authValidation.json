@@ -1,0 +1,11 @@
+{
+    "name": "Name must be in the range 6-20 characters",
+    "email": "Invalid email",
+    "password": "Must contain at least: 1 uppercase letter, 1 lowercase letter, 1 digit, 1 special character, 8 - 20 characters",
+    "phoneNumber": "Must be a valid phoneNumber: between 4-15 characters according to your country",
+    "country": "Must enter a country",
+    "expertiseFields": "Must enter 1-5 tags",
+    "otherField": "Please specify the other field",
+    "money": "Must enter at least $500 funding",
+    "desc": "Description must be in the range 150 characters to 500 characters"
+}

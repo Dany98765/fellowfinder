@@ -1,7 +1,7 @@
 {
     "title": "Get Started Now",
     "italicWord": "as",
-    "kickStarter": "Kick-Starter",
+    "kickStarter": "KickStarter",
     "funder": "Funder",
     "lawyer": "Lawyer",
     "name": "Name",
@@ -9,5 +9,8 @@
     "password": "Password",
     "phoneNumber": "Phone Number",
     "country": "Country",
-    "proceed": "Proceed"
-}
+    "proceed": "Continue",
+    "haveAccount": "Already have an account?",
+    "alt": "Login"
+  }
+  

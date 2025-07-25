@@ -31,13 +31,12 @@ export default function Navbar() {
             className="logo"
         />
       </Link>
-      
       <div className="navLinks">
         <Link className="pricingLink" href="#">Pricing</Link>
         <Link className="partnerFindLink" href="#">Find Partner</Link>
       </div>
       <div className="authButtons">
-        <Link className="signinLink" href="#">Sign in</Link>
+        <Link className="signinLink" href="/signin">Sign in</Link>
         <button className="signupButton" onClick={() => router.push("/signup")}>Get Started</button>
         <button onClick={toggleLanguage}>
           Change Language

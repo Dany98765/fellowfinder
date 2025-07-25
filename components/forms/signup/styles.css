@@ -30,12 +30,13 @@
 }
 .separationLine{
     width: 120%;
+    margin-bottom: 20px;
 }
 .formContainer{
     padding-top: 20px;
 }
 .fieldContainer{
-    padding-bottom: 30px;
+    padding-top: 30px;
 }
 .fieldText{
     padding-bottom: 10px;
@@ -46,6 +47,11 @@
     width: 600px;
     height: 30px;
     padding: 8px;
+    margin-bottom: 10px;
+}
+.formInput:focus{
+  border: 2px solid var(--dark-green);
+  outline: none; /* remove blue glow on some browsers */
 }
 .p {
     display: flex;
@@ -62,7 +68,7 @@
   /* Focus style */
   .p:focus-within {
     border-color: #1CA6A6;
-    box-shadow: 0 0 0 2px var(--dark-green);
+    box-shadow: 0 0 0 1px var(--dark-green);
   }
   
   /* Country selector (flag + dropdown) */
@@ -115,9 +121,134 @@
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .proceedButton:hover{
     background-color: rgba(18, 115, 115, 0.8);
     cursor: pointer;
+}
+.altAuth{
+  cursor: pointer;
+  color: var(--dark-green)
+}
+.onBoardForm{
+  padding-top: 30px;
+}
+.moneyInput{
+  height: 50px;
+  width: 100%;
+  padding: 8px;
+}
+.moneyInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dollarSign {
+  position: absolute;
+  left: 10px;
+  font-weight: bolder;
+  color: #000000;
+  font-size: 16px;
+  pointer-events: none; /* So it doesn't block input clicks */
+}
+
+.moneyInput {
+  padding-left: 20px; /* make space for the $ sign */
+  height: 60px;
+  font-size: 16px;
+  width: 100%;
+}
+.signupButton{
+  width: 100%;
+  padding: 10px 16px;
+  background-color: var(--dark-green);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.signupButton:hover{
+  background-color: rgba(18, 115, 115, 0.8);
+  cursor: pointer;
+}
+
+.termsAndPrivacyContainer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--dark-green);
+}
+.descInput{
+  resize: none;
+  width: 600px;
+  height: 200px;
+  text-wrap: pretty;
+  padding-left: 8px;
+  padding-top: 8px;
+}
+@media (max-width: 1210px) {
+    .separationLine{
+      width: 90%;
+    }
+    .formInput{
+      width: 500px;
+    }
+    .descInput{
+      width: 500px;
+    }
+    .signupButton{
+      width: 500px;
+    }
+}
+@media (max-width: 1035px) {
+  .separationLine{
+    width: 80%;
+  }
+  .formInput{
+    width: 400px;
+  }
+  .p {
+    width: 400px ;
+  }
+  .descInput{
+    width: 400px;
+  }
+  .signupButton{
+    width: 400px;
+  }
+}
+@media (max-width: 875px) {
+  .separationLine {
+    width: 70%;
+  }
+  .formInput {
+    width: 300px;
+  }
+  .p {
+    width: 300px;
+    padding: 8px 12px; 
+  }
+  .p .PhoneInputCountry {
+    min-width: 80px; /* gives enough space for flag + dropdown */
+    gap: 4px;
+  }
+  .p .PhoneInputCountrySelect {
+    width: 80px;
+  }
+  .descInput{
+    width: 300px;
+  }
+  .signupButton{
+    width: 300px;
+  }
 }

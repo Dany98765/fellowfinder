@@ -1,4 +1,9 @@
 {
+    "title": "Welcome Back!",
     "email": "Email",
-    "password": "Password"
+    "password": "Password",
+    "signin": "Signin",
+    "noAccount": "Don't have an Account?",
+    "italicWord": "Signup"
 }
+  

@@ -1,9 +1,11 @@
 {
-    "title": "Sign up now to Access this Dashboard",
-    "desc": "Enter your data to become part of our Family",
-    "featureOne": "Manage Sessions Quota",
-    "featureTwo": "View Partners’ Info",
-    "featureThree": "Keep up-to-date with sessions timing",
-    "featureFour": "Re-schedule session times",
-    "featureFive": "One-spot for all your needs"
-}
+    "title": "Sign up now to access this dashboard",
+    "titleSignin": "Sign in now to return to your dashboard",
+    "desc": "Enter your details to become part of our family",
+    "featureOne": "Manage sessions quota",
+    "featureTwo": "View partner information",
+    "featureThree": "Track session appointments",
+    "featureFour": "Reschedule session times",
+    "featureFive": "One spot for all your needs"
+  }
+  

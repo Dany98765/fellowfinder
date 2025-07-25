@@ -1,0 +1,27 @@
+{
+    "title": "Continue Registration",
+    "italicPhraseFunder": "as Funder",
+    "italicPhraseLawyer": "as Lawyer",
+    "italicPhraseKickStarter": "as KickStarter",
+    "investementFields": "Fields of Interest for Investment",
+    "altOneFunder": "Select the fields you want to invest your funding in",
+    "options": [
+        "IT & Tech", "Finance", "Education", "Agriculture", "Healthcare", "Trading", "Transportation", "Retail & E-commerce", "Tourism", "Other"
+    ],
+    "specifyOther": "Please specify the other field",
+    "altOneKickStarter": "Select fields you are willing to work in",
+    "altOneLawyer": "Select the fields you want to manage their legal entities",
+    "money": "Amount of Money to Invest",
+    "countries": "Countries to Operate In",
+    "altTwoLawyer": "Input all countries where you are familiar with government procedures and available to work in",
+    "altTwoFunder": "Input all countries where you want to invest your funding in",
+    "altTwoKickStarter": "Input all countries where you want to establish your startup in",
+    "description": "Description",
+    "altThree": "Describe your previous experiences, the clients you've worked with, in which countries, and more information about yourself...",
+    "agreement": "I agree to the",
+    "agreementUnderlined": "Terms and Privacy",
+    "signup": "Sign up",
+    "haveAccount": "Already have an account?",
+    "alt": "Login"
+  }
+  

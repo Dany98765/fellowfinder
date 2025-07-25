@@ -1,0 +1,15 @@
+@media (max-width: 1210px) {
+    .fieldSelection{
+        width: 500px;
+    }
+}
+@media (max-width: 1035px) {
+    .fieldSelection{
+        width: 400px;
+    }
+}
+@media (max-width: 875px) {
+    .fieldSelection{
+        width: 300px;
+    }
+}

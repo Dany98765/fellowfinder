@@ -1,0 +1,41 @@
+.signinFormContainer{
+    padding-top: 30px;
+}
+.fieldContainer{
+    padding-top: 30px;
+}
+.fieldText{
+    padding-bottom: 10px;
+}
+.formInput{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 600px;
+    height: 30px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.formInput:focus{
+  border: 2px solid var(--dark-green);
+  outline: none; /* remove blue glow on some browsers */
+}
+.title{
+    padding-bottom: 30px;
+}
+.separationLine{
+    width: 120%;
+}
+.signinButton{
+    width: 100%;
+    padding: 10px 16px;
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.signinButton:hover{
+    background-color: rgba(18, 115, 115, 0.8);
+    cursor: pointer;
+}

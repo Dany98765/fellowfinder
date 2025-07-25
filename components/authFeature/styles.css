@@ -8,3 +8,16 @@
     width: 20px;
     height: 20px;
 }
+.featureText{
+    color: white;
+}
+@media (max-width: 950px) {
+    .featureText{
+        font-size: 14px;
+    }
+}
+@media (max-width: 820px) {
+    .featureText{
+        width: 80%;
+    }
+}

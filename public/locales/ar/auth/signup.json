@@ -9,5 +9,7 @@
     "password": "كلمة المرور",
     "phoneNumber": "رقم التليفون",
     "country": "الدوله",
-    "proceed": "استكمال"
+    "proceed": "التالي",
+    "haveAccount": "هل لديك حساب؟",
+    "alt": "تسجيل الدخول"
 }
